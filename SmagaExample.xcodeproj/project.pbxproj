@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AD52A993297A854536F0F67 /* Pods_SmagaExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */; };
+		611057741DE887B1001EF821 /* DataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611057731DE887B1001EF821 /* DataApi.swift */; };
 		61F4B3C61DE8838800935D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3C51DE8838800935D18 /* AppDelegate.swift */; };
 		61F4B3C81DE8838800935D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3C71DE8838800935D18 /* ViewController.swift */; };
 		61F4B3CB1DE8838800935D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F4B3C91DE8838800935D18 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		06E6554561464C58BC3A4CDC /* Pods-SmagaExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExampleUITests/Pods-SmagaExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21FF2F88C3123568E507AA63 /* Pods-SmagaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExample/Pods-SmagaExample.release.xcconfig"; sourceTree = "<group>"; };
 		51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmagaExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		611057731DE887B1001EF821 /* DataApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataApi.swift; sourceTree = "<group>"; };
 		61F4B3C21DE8838800935D18 /* SmagaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmagaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F4B3C51DE8838800935D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F4B3C71DE8838800935D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		611057721DE88765001EF821 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				611057731DE887B1001EF821 /* DataApi.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		61F4B3B91DE8838800935D18 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 			children = (
 				61F4B3C51DE8838800935D18 /* AppDelegate.swift */,
 				61F4B3C71DE8838800935D18 /* ViewController.swift */,
+				611057721DE88765001EF821 /* Networking */,
 				61F4B3C91DE8838800935D18 /* Main.storyboard */,
 				61F4B3CC1DE8838800935D18 /* Assets.xcassets */,
 				61F4B3CE1DE8838800935D18 /* LaunchScreen.storyboard */,
@@ -446,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611057741DE887B1001EF821 /* DataApi.swift in Sources */,
 				61F4B3C81DE8838800935D18 /* ViewController.swift in Sources */,
 				61F4B3C61DE8838800935D18 /* AppDelegate.swift in Sources */,
 			);
@@ -698,6 +710,7 @@
 				61F4B3EC1DE8838800935D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61F4B3ED1DE8838800935D18 /* Build configuration list for PBXNativeTarget "SmagaExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +719,7 @@
 				61F4B3EF1DE8838800935D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61F4B3F01DE8838800935D18 /* Build configuration list for PBXNativeTarget "SmagaExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +728,7 @@
 				61F4B3F21DE8838800935D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
