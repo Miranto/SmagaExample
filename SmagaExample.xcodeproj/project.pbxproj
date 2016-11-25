@@ -99,6 +99,13 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		611057751DE88A25001EF821 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		61F4B3B91DE8838800935D18 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +133,7 @@
 			children = (
 				61F4B3C51DE8838800935D18 /* AppDelegate.swift */,
 				61F4B3C71DE8838800935D18 /* ViewController.swift */,
+				611057751DE88A25001EF821 /* Models */,
 				611057721DE88765001EF821 /* Networking */,
 				61F4B3C91DE8838800935D18 /* Main.storyboard */,
 				61F4B3CC1DE8838800935D18 /* Assets.xcassets */,

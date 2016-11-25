@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Moya-ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0031A213965D0F2FEC3A5BB49AFCB84F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>07BD7CFD653DF398A16172B309273311</key>
 		<dict>
 			<key>primary</key>
@@ -47,17 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D4854F4C86C024C8068611C59793EEB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A63B74CA9090DD5F4B184DA77A5D5516</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B27F1F7B862582A90168D876BFA178C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF9F83025EEE1E89490800018F391A28</key>
 		<dict>
 			<key>primary</key>
 			<true/>

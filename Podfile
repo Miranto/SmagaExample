@@ -7,6 +7,7 @@ target 'SmagaExample' do
 
   # Pods for SmagaExample
   pod 'Moya', '8.0.0-beta.4'
+  pod 'Moya-ObjectMapper', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
 
   target 'SmagaExampleTests' do
     inherit! :search_paths
