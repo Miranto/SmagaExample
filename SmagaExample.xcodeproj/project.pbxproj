@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AD52A993297A854536F0F67 /* Pods_SmagaExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */; };
 		611057741DE887B1001EF821 /* DataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611057731DE887B1001EF821 /* DataApi.swift */; };
+		611057791DE88B0D001EF821 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611057781DE88B0D001EF821 /* Image.swift */; };
+		6110577B1DE88BD4001EF821 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110577A1DE88BD4001EF821 /* Info.swift */; };
 		61F4B3C61DE8838800935D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3C51DE8838800935D18 /* AppDelegate.swift */; };
 		61F4B3C81DE8838800935D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3C71DE8838800935D18 /* ViewController.swift */; };
 		61F4B3CB1DE8838800935D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F4B3C91DE8838800935D18 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		21FF2F88C3123568E507AA63 /* Pods-SmagaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExample/Pods-SmagaExample.release.xcconfig"; sourceTree = "<group>"; };
 		51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmagaExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		611057731DE887B1001EF821 /* DataApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataApi.swift; sourceTree = "<group>"; };
+		611057781DE88B0D001EF821 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		6110577A1DE88BD4001EF821 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		61F4B3C21DE8838800935D18 /* SmagaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmagaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F4B3C51DE8838800935D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F4B3C71DE8838800935D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		611057751DE88A25001EF821 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				611057781DE88B0D001EF821 /* Image.swift */,
+				6110577A1DE88BD4001EF821 /* Info.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -468,6 +474,8 @@
 				611057741DE887B1001EF821 /* DataApi.swift in Sources */,
 				61F4B3C81DE8838800935D18 /* ViewController.swift in Sources */,
 				61F4B3C61DE8838800935D18 /* AppDelegate.swift in Sources */,
+				6110577B1DE88BD4001EF821 /* Info.swift in Sources */,
+				611057791DE88B0D001EF821 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
