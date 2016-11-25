@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AD52A993297A854536F0F67 /* Pods_SmagaExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */; };
 		61F4B3C61DE8838800935D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3C51DE8838800935D18 /* AppDelegate.swift */; };
 		61F4B3C81DE8838800935D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3C71DE8838800935D18 /* ViewController.swift */; };
 		61F4B3CB1DE8838800935D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F4B3C91DE8838800935D18 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		61F4B3D01DE8838800935D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F4B3CE1DE8838800935D18 /* LaunchScreen.storyboard */; };
 		61F4B3DB1DE8838800935D18 /* SmagaExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3DA1DE8838800935D18 /* SmagaExampleTests.swift */; };
 		61F4B3E61DE8838800935D18 /* SmagaExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F4B3E51DE8838800935D18 /* SmagaExampleUITests.swift */; };
+		CF156B98FD7C8EAD5B3A57FD /* Pods_SmagaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0A50831DEA86187078A748 /* Pods_SmagaExample.framework */; };
+		F2C0AA59A73A86AAB17230C8 /* Pods_SmagaExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A174F61327FAC8BC93D2DDCA /* Pods_SmagaExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06E6554561464C58BC3A4CDC /* Pods-SmagaExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExampleUITests/Pods-SmagaExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21FF2F88C3123568E507AA63 /* Pods-SmagaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExample/Pods-SmagaExample.release.xcconfig"; sourceTree = "<group>"; };
+		51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmagaExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F4B3C21DE8838800935D18 /* SmagaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmagaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F4B3C51DE8838800935D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F4B3C71DE8838800935D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		61F4B3E11DE8838800935D18 /* SmagaExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmagaExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F4B3E51DE8838800935D18 /* SmagaExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmagaExampleUITests.swift; sourceTree = "<group>"; };
 		61F4B3E71DE8838800935D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63378546E43CD7FCAFF72931 /* Pods-SmagaExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExampleUITests/Pods-SmagaExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DB603D007E1BFBA2A56C679 /* Pods-SmagaExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExampleTests/Pods-SmagaExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		930AAF3E5EEEB4BC0328C463 /* Pods-SmagaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExample/Pods-SmagaExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A174F61327FAC8BC93D2DDCA /* Pods_SmagaExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmagaExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D169D1F4132E491B085187C0 /* Pods-SmagaExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmagaExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmagaExampleTests/Pods-SmagaExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB0A50831DEA86187078A748 /* Pods_SmagaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmagaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF156B98FD7C8EAD5B3A57FD /* Pods_SmagaExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD52A993297A854536F0F67 /* Pods_SmagaExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C0AA59A73A86AAB17230C8 /* Pods_SmagaExampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				61F4B3D91DE8838800935D18 /* SmagaExampleTests */,
 				61F4B3E41DE8838800935D18 /* SmagaExampleUITests */,
 				61F4B3C31DE8838800935D18 /* Products */,
+				7D4D44ECCCCF577BCFC970C1 /* Pods */,
+				C89A26A409FC14819320E51D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = SmagaExampleUITests;
 			sourceTree = "<group>";
 		};
+		7D4D44ECCCCF577BCFC970C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				930AAF3E5EEEB4BC0328C463 /* Pods-SmagaExample.debug.xcconfig */,
+				21FF2F88C3123568E507AA63 /* Pods-SmagaExample.release.xcconfig */,
+				7DB603D007E1BFBA2A56C679 /* Pods-SmagaExampleTests.debug.xcconfig */,
+				D169D1F4132E491B085187C0 /* Pods-SmagaExampleTests.release.xcconfig */,
+				63378546E43CD7FCAFF72931 /* Pods-SmagaExampleUITests.debug.xcconfig */,
+				06E6554561464C58BC3A4CDC /* Pods-SmagaExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C89A26A409FC14819320E51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB0A50831DEA86187078A748 /* Pods_SmagaExample.framework */,
+				51E4C5D4C6AAAC9B2285271F /* Pods_SmagaExampleTests.framework */,
+				A174F61327FAC8BC93D2DDCA /* Pods_SmagaExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61F4B3EA1DE8838800935D18 /* Build configuration list for PBXNativeTarget "SmagaExample" */;
 			buildPhases = (
+				6180AF29F9927B97BAB8CF4F /* [CP] Check Pods Manifest.lock */,
 				61F4B3BE1DE8838800935D18 /* Sources */,
 				61F4B3BF1DE8838800935D18 /* Frameworks */,
 				61F4B3C01DE8838800935D18 /* Resources */,
+				30D6F9C58A144F48FA98442F /* [CP] Embed Pods Frameworks */,
+				C8D93781107A8C05EC9DCD02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61F4B3ED1DE8838800935D18 /* Build configuration list for PBXNativeTarget "SmagaExampleTests" */;
 			buildPhases = (
+				60DD92C3A120EEA092672D8F /* [CP] Check Pods Manifest.lock */,
 				61F4B3D21DE8838800935D18 /* Sources */,
 				61F4B3D31DE8838800935D18 /* Frameworks */,
 				61F4B3D41DE8838800935D18 /* Resources */,
+				8A17D2723C41DB665E69F7C4 /* [CP] Embed Pods Frameworks */,
+				3B5E9F885D83100F28E3A3C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61F4B3F01DE8838800935D18 /* Build configuration list for PBXNativeTarget "SmagaExampleUITests" */;
 			buildPhases = (
+				8B8CFC2FC2054C6412E02A2C /* [CP] Check Pods Manifest.lock */,
 				61F4B3DD1DE8838800935D18 /* Sources */,
 				61F4B3DE1DE8838800935D18 /* Frameworks */,
 				61F4B3DF1DE8838800935D18 /* Resources */,
+				4A8C4AF0BC5E6ECDA8E27A9B /* [CP] Embed Pods Frameworks */,
+				11468D5F2EA15B7E81098774 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11468D5F2EA15B7E81098774 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmagaExampleUITests/Pods-SmagaExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30D6F9C58A144F48FA98442F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmagaExample/Pods-SmagaExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B5E9F885D83100F28E3A3C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmagaExampleTests/Pods-SmagaExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8C4AF0BC5E6ECDA8E27A9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmagaExampleUITests/Pods-SmagaExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60DD92C3A120EEA092672D8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6180AF29F9927B97BAB8CF4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A17D2723C41DB665E69F7C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmagaExampleTests/Pods-SmagaExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8CFC2FC2054C6412E02A2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D93781107A8C05EC9DCD02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmagaExample/Pods-SmagaExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61F4B3BE1DE8838800935D18 /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		61F4B3EB1DE8838800935D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930AAF3E5EEEB4BC0328C463 /* Pods-SmagaExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmagaExample/Info.plist;
@@ -422,6 +610,7 @@
 		};
 		61F4B3EC1DE8838800935D18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21FF2F88C3123568E507AA63 /* Pods-SmagaExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmagaExample/Info.plist;
@@ -434,6 +623,7 @@
 		};
 		61F4B3EE1DE8838800935D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB603D007E1BFBA2A56C679 /* Pods-SmagaExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +638,7 @@
 		};
 		61F4B3EF1DE8838800935D18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D169D1F4132E491B085187C0 /* Pods-SmagaExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +653,7 @@
 		};
 		61F4B3F11DE8838800935D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63378546E43CD7FCAFF72931 /* Pods-SmagaExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SmagaExampleUITests/Info.plist;
@@ -475,6 +667,7 @@
 		};
 		61F4B3F21DE8838800935D18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E6554561464C58BC3A4CDC /* Pods-SmagaExampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SmagaExampleUITests/Info.plist;
