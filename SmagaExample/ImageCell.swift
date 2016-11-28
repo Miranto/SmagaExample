@@ -20,14 +20,32 @@ class ImageCell: UICollectionViewCell {
       print("Download Finished")
       DispatchQueue.main.async() { () -> Void in
         let image = UIImage(data: data)
-      
-        self.imageView.image = image
+        let maskImage = UIImage(named: "star.png")
         
+        self.imageView.image = maskkImage(image: image!, mask: maskImage!)
       }
     }
   }
 }
 
+func maskkImage(image:UIImage, mask:(UIImage)) -> UIImage {
+  
+  let imageReference = image.cgImage
+  let maskReference = mask.cgImage
+  
+  let imageMask = CGImage(maskWidth: maskReference!.width,
+                          height: maskReference!.height,
+                          bitsPerComponent: maskReference!.bitsPerComponent,
+                          bitsPerPixel: maskReference!.bitsPerPixel,
+                          bytesPerRow: maskReference!.bytesPerRow,
+                          provider: maskReference!.dataProvider!, decode: nil, shouldInterpolate: true)
+  
+  let maskedReference = imageReference!.masking(imageMask!)
+  
+  let maskedImage = UIImage(cgImage:maskedReference!)
+  
+  return maskedImage
+}
 
 func getDataFromUrl(urlString: String, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
   let url = URL(string: urlString)
