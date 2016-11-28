@@ -20,18 +20,19 @@ class ViewController: UIViewController {
       print(imagesData.count)
     }
   }
-  
   var root = [Root]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    let longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongGesture:")
+    longPressGesture.delegate = self
+    self.imagesCollectionView.addGestureRecognizer(longPressGesture)
     // Do any additional setup after loading the view, typically from a nib.
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     let provider = MoyaProvider<DataApi>(plugins: [NetworkLoggerPlugin(verbose: true)])
-    print("lala")
     
     provider.request(.imagesList, completion: { result in
       
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
         }
         self.imagesCollectionView.reloadData()
       case let .failure(error):
-        guard let error = error as? CustomStringConvertible else {
+        guard error is CustomStringConvertible else {
           break
         }
        
@@ -55,6 +56,28 @@ class ViewController: UIViewController {
       
     })
   }
+}
+
+// MARK: - UIGestureRecognizerDelegate
+extension ViewController: UIGestureRecognizerDelegate {
+  func handleLongGesture(_ gesture: UILongPressGestureRecognizer) {
+    
+    switch(gesture.state) {
+      
+    case UIGestureRecognizerState.began:
+      guard let selectedIndexPath = self.imagesCollectionView.indexPathForItem(at: gesture.location(in: self.imagesCollectionView)) else {
+        break
+      }
+      imagesCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+    case UIGestureRecognizerState.changed:
+      imagesCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))
+    case UIGestureRecognizerState.ended:
+      imagesCollectionView.endInteractiveMovement()
+    default:
+      imagesCollectionView.cancelInteractiveMovement()
+    }
+  }
+
 }
 
 // MARK: - UICollectionViewDataSource
@@ -78,4 +101,17 @@ extension ViewController: UICollectionViewDataSource {
     return cell
   }
 }
+
+// MARK: - UICollectionViewDelegate
+extension ViewController: UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView,
+                      moveItemAt sourceIndexPath: IndexPath,
+                      to destinationIndexPath: IndexPath) {
+    let temp = self.imagesData[sourceIndexPath.row]
+    self.imagesData[sourceIndexPath.row] = self.imagesData[destinationIndexPath.row]
+    self.imagesData[destinationIndexPath.row] = temp
+  }
+}
+
+
 
