@@ -11,9 +11,11 @@ import UIKit
 class ImageCell: UICollectionViewCell {
     
   @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var indicator: UIActivityIndicatorView!
   
   func configureCell(data: Image) {
     print("configure cell")
+    self.indicator.startAnimating()
 //    self.imageView.image = UIImage(data: NSData(contentsOf: NSURL(string:data.imageURL)! as URL)! as Data)!
     getDataFromUrl(urlString: data.imageURL) { (data, response, error)  in
       guard let data = data, error == nil else { return }
@@ -22,6 +24,7 @@ class ImageCell: UICollectionViewCell {
         let image = UIImage(data: data)
         let maskImage = UIImage(named: "star.png")
         
+        self.indicator.stopAnimating()
         self.imageView.image = maskkImage(image: image!, mask: maskImage!)
       }
     }

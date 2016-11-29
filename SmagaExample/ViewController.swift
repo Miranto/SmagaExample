@@ -9,6 +9,7 @@
 import UIKit
 import Moya
 import Moya_ObjectMapper
+import SwiftSpinner
 
 class ViewController: UIViewController {
   
@@ -17,14 +18,13 @@ class ViewController: UIViewController {
   fileprivate let reuseIdentifier = "ImageCell"
   var imagesData = [Image](){
     didSet {
-      print(imagesData.count)
+      print("images count ", imagesData.count)
     }
   }
-  var root = [Root]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongGesture:")
+    let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.handleLongGesture(_:)))
     longPressGesture.delegate = self
     self.imagesCollectionView.addGestureRecognizer(longPressGesture)
     // Do any additional setup after loading the view, typically from a nib.
@@ -32,8 +32,18 @@ class ViewController: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    
+  }
+  override func viewDidAppear(_ animated: Bool) {
+    self.downloadImages()
+  }
+  
+  // MARK: Networking Methods
+  
+  func downloadImages() {
     let provider = MoyaProvider<DataApi>(plugins: [NetworkLoggerPlugin(verbose: true)])
     
+    SwiftSpinner.show("Loading data...")
     provider.request(.imagesList, completion: { result in
       
       switch result {
@@ -41,20 +51,36 @@ class ViewController: UIViewController {
         do {
           let root: Root? = try response.mapObject(Root.self)
           self.imagesData = (root?.images)!
- 
+          SwiftSpinner.hide()
+          
         } catch {
           print("catch")
+          SwiftSpinner.hide()
+          self.showErrorAlert()
           
         }
         self.imagesCollectionView.reloadData()
       case let .failure(error):
+        SwiftSpinner.hide()
+        self.showErrorAlert()
         guard error is CustomStringConvertible else {
           break
         }
-       
+        
       }
       
     })
+  }
+  
+  // MARK: Helpers Methods
+  
+  func showErrorAlert() {
+    let alertController = UIAlertController(title: "Error", message: "Cannot download data. Please try again later.", preferredStyle: .alert)
+    
+    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+    alertController.addAction(defaultAction)
+    
+    self.present(alertController, animated: true, completion: nil)
   }
 }
 
