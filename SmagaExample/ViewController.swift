@@ -14,13 +14,16 @@ import SwiftSpinner
 class ViewController: UIViewController {
   
   // MARK: - Properties
+  
   @IBOutlet weak var imagesCollectionView: UICollectionView!
   fileprivate let reuseIdentifier = "ImageCell"
-  var imagesData = [Image](){
+  fileprivate var imagesData = [Image]() {
     didSet {
       print("images count ", imagesData.count)
     }
   }
+  
+  // MARK: - Lifecycles Methods
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,6 +38,7 @@ class ViewController: UIViewController {
     
     self.setupView()
   }
+  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.downloadImages()
@@ -63,7 +67,6 @@ class ViewController: UIViewController {
           SwiftSpinner.hide()
           
         } catch {
-          print("catch")
           SwiftSpinner.hide()
           self.showErrorAlert()
           
@@ -72,17 +75,16 @@ class ViewController: UIViewController {
       case let .failure(error):
         SwiftSpinner.hide()
         self.showErrorAlert()
+        
         guard error is CustomStringConvertible else {
           break
         }
-        
       }
-      
     })
   }
   
   // MARK: Helpers Methods
-  
+
   func showErrorAlert() {
     let alertController = UIAlertController(title: "Error", message: "Cannot download data. Please try again later.", preferredStyle: .alert)
     
@@ -114,6 +116,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - UIGestureRecognizerDelegate
+
 extension ViewController: UIGestureRecognizerDelegate {
   func handleLongGesture(_ gesture: UILongPressGestureRecognizer) {
     
@@ -132,10 +135,10 @@ extension ViewController: UIGestureRecognizerDelegate {
       imagesCollectionView.cancelInteractiveMovement()
     }
   }
-
 }
 
 // MARK: - UICollectionViewDataSource
+
 extension ViewController: UICollectionViewDataSource {
   
   func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -158,6 +161,7 @@ extension ViewController: UICollectionViewDataSource {
 }
 
 // MARK: - UICollectionViewDelegate
+
 extension ViewController: UICollectionViewDelegate {
   
   func collectionView(_ collectionView: UICollectionView,

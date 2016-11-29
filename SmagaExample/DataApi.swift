@@ -38,7 +38,7 @@ extension DataApi: TargetType {
   var sampleData: Data {
     switch self {
     case .imagesList:
-      return "Test event data".utf8EncodedData
+      return "Test data".utf8EncodedData
     }
   }
   var task: Task {

@@ -16,7 +16,7 @@ class ImageCell: UICollectionViewCell {
   func configureCell(data: Image) {
     print("configure cell")
     self.indicator.startAnimating()
-//    self.imageView.image = UIImage(data: NSData(contentsOf: NSURL(string:data.imageURL)! as URL)! as Data)!
+
     getDataFromUrl(urlString: data.imageURL) { (data, response, error)  in
       guard let data = data, error == nil else { return }
       print("Download Finished")
