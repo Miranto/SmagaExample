@@ -33,10 +33,18 @@ class ViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
+    self.setupView()
   }
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.downloadImages()
+  }
+  
+  // MARK: Setup Views Methods
+  
+  func setupView() {
+    self.view.backgroundColor = UIColor(hex: 0xFB8C00 )
+    self.imagesCollectionView.backgroundColor = UIColor.clear
   }
   
   // MARK: Networking Methods
