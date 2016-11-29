@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     
   }
   override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
     self.downloadImages()
   }
   
@@ -81,6 +82,26 @@ class ViewController: UIViewController {
     alertController.addAction(defaultAction)
     
     self.present(alertController, animated: true, completion: nil)
+  }
+  
+  func showTimestampAlert(info: Info) {
+    let timestampMessage = self.convertDateToHumanReadableForm(stringDate: info.timestamp)
+    let alertController = UIAlertController(title: "Timestamp", message: timestampMessage, preferredStyle: .alert)
+    
+    let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+    alertController.addAction(defaultAction)
+    
+    self.present(alertController, animated: true, completion: nil)
+  }
+  
+  func convertDateToHumanReadableForm(stringDate: String) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+    let date = dateFormatter.date(from: stringDate)
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+    let convertedDate = dateFormatter.string(from: date!)
+    
+    return convertedDate
   }
 }
 
@@ -130,6 +151,14 @@ extension ViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
+  
+  func collectionView(_ collectionView: UICollectionView,
+                      didDeselectItemAt indexPath: IndexPath) {
+    let info = self.imagesData[indexPath.row].info
+    
+    self.showTimestampAlert(info: info!)
+  }
+  
   func collectionView(_ collectionView: UICollectionView,
                       moveItemAt sourceIndexPath: IndexPath,
                       to destinationIndexPath: IndexPath) {
